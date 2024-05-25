@@ -1,38 +1,38 @@
 echo off
 
-start "" /b "C:\users\dabor\desktop\Hotkeys\alleHotkeys\colorPicker.ahk"
-start "" /b "C:\users\dabor\desktop\Hotkeys\alleHotkeys\lightshotLive.ahk"
-start "" /b "C:\users\dabor\desktop\Hotkeys\alleHotkeys\switchVscWindow.ahk"
+start "" /b "YOUR PATH\colorPicker.ahk"
+start "" /b "YOUR PATH\lightshotLive.ahk"
+start "" /b "YOUR PATH\switchVscWindow.ahk"
 
 
 start chrome.exe "https://github.com/"
 timeout /t 1
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+start "" /b "YOUR PATH\send_win_left.ahk"
 timeout /t 0.2
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+start "" /b "YOUR PATH\send_win_left.ahk"
 timeout /t 0.2
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+start "" /b "YOUR PATH\send_win_left.ahk"
 timeout /t 0.2
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+start "" /b "YOUR PATH\send_win_left.ahk"
 timeout /t 0.2
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+start "" /b "YOUR PATH\send_win_left.ahk"
 timeout /t 1
 
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\ctrl_n.ahk"
+start "" /b "YOUR PATH\ctrl_n.ahk"
 timeout /t 1
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\openAiUrl.ahk"
+start "" /b "YOUR PATH\openAiUrl.ahk"
 timeout /t 1.5
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+start "" /b "YOUR PATH\send_win_left.ahk"
 timeout /t 0.1
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+start "" /b "YOUR PATH\send_win_left.ahk"
 timeout /t 1
 
 timeout /t 1
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\ctrl_n.ahk"
+start "" /b "YOUR PATH\ctrl_n.ahk"
 timeout /t 1
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\googleUrl.ahk"
+start "" /b "YOUR PATH\googleUrl.ahk"
 timeout /t 1.5
-start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+start "" /b "YOUR PATH\send_win_left.ahk"
 timeout /t 1
 
 
