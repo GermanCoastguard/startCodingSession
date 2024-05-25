@@ -1,0 +1,92 @@
+// Place your key bindings in this file to override the defaults
+// Tabs
+[
+    //open searchbar to create tab
+//  { key : "ctrl+p", }
+
+    // swtich 
+        // Tab
+            // next Tab
+            {"key": "ctrl+tab", "command": "workbench.action.nextEditor", },
+            { "key": "ctrl+shift+tab", "command": "workbench.action.previousEditor" },
+            // tab to Index
+            { "key": "ctrl+1", "command": "workbench.action.openEditorAtIndex1" },
+            { "key": "ctrl+2", "command": "workbench.action.openEditorAtIndex2" },
+            { "key": "ctrl+3", "command": "workbench.action.openEditorAtIndex3" },
+            { "key": "ctrl+4", "command": "workbench.action.openEditorAtIndex4" },
+            { "key": "ctrl+5", "command": "workbench.action.openEditorAtIndex5" },
+            { "key": "ctrl+6", "command": "workbench.action.openEditorAtIndex6" },
+            { "key": "ctrl+7", "command": "workbench.action.openEditorAtIndex7" },
+            { "key": "ctrl+8", "command": "workbench.action.openEditorAtIndex8" },
+            { "key": "ctrl+9", "command": "workbench.action.openEditorAtIndex9" },
+        // Group
+            // tab to groupIndex
+            { "key": "alt+1", "command": "workbench.action.focusFirstEditorGroup"},
+            { "key": "alt+2", "command": "workbench.action.focusSecondEditorGroup"},
+            { "key": "alt+3", "command": "workbench.action.focusThirdEditorGroup"},
+            // { "key": "alt+4", "command": "workbench.action.focusFourthEditorGroup"},
+            // alt + 4 ist raus, weil ich über switchVscWindowAutohotkey eine Funktion ausführe um :
+                // von z.B. (ich befinde mich in alt+1 , in alt + 4 soll automatisch alt+1 geöffnet werden )
+                // windows.openFile("vscWindowSwap.ahk")
+                    // ausgelöst von windows.openFile(starteCodingSession.bat)
+            { "key": "alt+5", "command": "workbench.action.focusFourthEditorGroup"},
+            { "key": "alt+6", "command": "workbench.action.focusFourthEditorGroup"},
+            // 5 und 6 mussten mit eingebunden werden (damit ctrl + g wie gewünscht ausgeführt werden kann.)
+            { "key": "alt+7", "command": "workbench.action.focusSeventhEditorGroup"},
+            { "key": "alt+8", "command": "workbench.action.focusEighthEditorGroup"},
+            { "key": "alt+9", "command": "workbench.action.focusNinthEditorGroup"},
+            
+
+    //close
+        // current tab
+        { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor","when": "editorFocus",},
+    //open 
+        // recently closed Tab
+        {
+            "key": "ctrl+alt+w",
+            "command": "workbench.action.reopenClosedEditor",
+        },
+        {
+            "key": "ctrl+shift+oem_4",
+            "command": "editor.action.outdentLines",
+            "when": "editorTextFocus && !editorReadonly"
+        },
+        {
+            "key": "ctrl+oem_4",
+            "command": "-editor.action.outdentLines",
+            "when": "editorTextFocus && !editorReadonly"
+        },
+        {
+            "key": "ctrl+oem_4",
+            "command": "editor.fold",
+            "when": "editorTextFocus && foldingEnabled"
+        },
+        {
+            "key": "ctrl+shift+oem_4",
+            "command": "-editor.fold",
+            "when": "editorTextFocus && foldingEnabled"
+        },
+        {
+            "key": "ctrl+shift+oem_6",
+            "command": "editor.action.indentLines",
+            "when": "editorTextFocus && !editorReadonly"
+        },
+        {
+            "key": "ctrl+oem_6",
+            "command": "-editor.action.indentLines",
+            "when": "editorTextFocus && !editorReadonly"
+        },
+        {
+            "key": "ctrl+oem_6",
+            "command": "editor.unfold",
+            "when": "editorTextFocus && foldingEnabled"
+        },
+        {
+            "key": "ctrl+shift+oem_6",
+            "command": "-editor.unfold",
+            "when": "editorTextFocus && foldingEnabled"
+        },
+
+            
+ ]
+ 
