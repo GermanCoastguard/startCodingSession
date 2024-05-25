@@ -1,51 +1,40 @@
 echo off
 
-go to end
+start "" /b "C:\users\dabor\desktop\Hotkeys\alleHotkeys\colorPicker.ahk"
+start "" /b "C:\users\dabor\desktop\Hotkeys\alleHotkeys\lightshotLive.ahk"
+start "" /b "C:\users\dabor\desktop\Hotkeys\alleHotkeys\switchVscWindow.ahk"
 
-:end
-start "" "YOUR PATH \colorPicker.ahk"
-start "" "YOUR PATH \lightshotLive.ahk"
-start "" "YOUR PATH \switchVscWindow.ahk"
 
-start chrome.exe
 start chrome.exe "https://github.com/"
-timeout /t 0.1
-start "" "YOUR PATH \ctrl_1.ahk"
-timeout /t 0.005
-start "" "YOUR PATH \ctrl_w.ahk"
-timeout /t 0.005
-start "" "YOUR PATH \send_win_left.ahk"
-timeout /t 0.0001
-start "" "YOUR PATH \send_win_left.ahk"
-timeout /t 0.0001
-start "" "YOUR PATH \send_win_left.ahk"
-timeout /t 0.0001
-start "" "YOUR PATH \send_win_left.ahk"
-timeout /t 0.0001
-start "" "YOUR PATH \send_win_left.ahk"
-timeout /t 0.0001
+timeout /t 1
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+timeout /t 0.2
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+timeout /t 0.2
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+timeout /t 0.2
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+timeout /t 0.2
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+timeout /t 1
 
-
-start chrome.exe
-start chrome.exe "https://chat.openai.com/chat"
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\ctrl_n.ahk"
+timeout /t 1
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\openAiUrl.ahk"
+timeout /t 1.5
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
 timeout /t 0.1
-start "" "YOUR PATH \ctrl_1.ahk"
-timeout /t 0.005
-start "" "YOUR PATH \ctrl_w.ahk"
-start "" "YOUR PATH \send_win_left.ahk"
-timeout /t 0.0001
-start "" "YOUR PATH \send_win_left.ahk"
-timeout /t 0.0001
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+timeout /t 1
 
-start chrome.exe
-start chrome.exe "https://www.google.com"
-timeout /t 0.1
-start "" "YOUR PATH \ctrl_1.ahk"
-timeout /t 0.005
-start "" "YOUR PATH \ctrl_w.ahk"
-start "" "YOUR PATH \send_win_left.ahk"
-timeout /t 0.0001
+timeout /t 1
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\ctrl_n.ahk"
+timeout /t 1
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\googleUrl.ahk"
+timeout /t 1.5
+start "" /b "C:\users\dabor\desktop\hotkeys\alleHotkeys\send_win_left.ahk"
+timeout /t 1
+
 
 
 exit
-github
