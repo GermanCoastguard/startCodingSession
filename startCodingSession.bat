@@ -46,7 +46,7 @@ start "" /b "YOUR PATH\openChromeDevTools.ahk"
 timeout /t 1
 
 start "" /b "YOUR PATH\cB.xlsx
-timeout /t 1
+timeout /t 2
 start "" /b "YOUR PATH\send_win_left.ahk"
 
 exit
