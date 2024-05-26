@@ -1,12 +1,23 @@
 @echo off
 
-start "" /b "YOUR PATH\colorPicker.ahk"
-start "" /b "YOUR PATH\lightshotLive.ahk"
+	REM VSC Bezogene 
 start "" /b "YOUR PATH\switchVscWindow.ahk"
-start "" /b "YOUR PATH\ctrlCBackup.ahk"
-start "" /b "YOUR PATH\ctrlXBackup.ahk"
 start "" /b "YOUR PATH\wrapTextIntoInterpolation.ahk"
 start "" /b "YOUR PATH\wrapTextIntoStringInterpolation.ahk"
+	REM Auch auf andere Quellen bezogen , => Allgemein und Bearbeitungsfähige Textdatei/Eingabedaitei als Requirement
+start "" /b "YOUR PATH\ctrlCBackup.ahk"
+start "" /b "YOUR PATH\ctrlXBackup.ahk"
+
+	REM Powertoys Bezogene
+start "" /b "YOUR PATH\colorPicker.ahk"
+start "" /b "YOUR PATH\lightshotLive.ahk"
+
+	REM Windows bezogene 
+		REM Folgende Makros entfernen vergabe von ² aka {U+00B2} sowie ³ {U+00B3}
+start "" /b "YOUR PATH\tabToGithub.ahk"
+start "" /b "YOUR PATH\tabToGpt.ahk"
+start "" /b "YOUR PATH\tabToVsc.ahk"
+start "" /b "YOUR PATH\tabToLiveserver.ahk"
 
 start chrome.exe "https://github.com/"
 timeout /t 2
