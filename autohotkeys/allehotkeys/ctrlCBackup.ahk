@@ -5,7 +5,7 @@
     Send, ^{Alt up}
     Send, ^{Ctrl up}
     Send, {LWin}
-    Sleep, 25
+    Sleep, 500
     Send, cB.xlsx
     Sleep, 500
     Send, {Enter}
@@ -17,6 +17,6 @@
     Send, +{F11}
     Sleep, 10
     Send, !{Tab}
-    Sleep, 50
+    Sleep, 150
     Send, ^c
 Return
