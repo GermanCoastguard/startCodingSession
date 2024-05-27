@@ -2,8 +2,8 @@
 
 ^!x:: ; Wenn Strg + Alt + X gedrückt wird
     KeyWait, x, U ; Warte bis Taste 'x' losgelassen wird
-    Send, ^{Alt up}
-    Send, ^{Ctrl up}
+    Send, {Alt up}
+    Send, {Ctrl up}
     Send, {LWin}
     Sleep, 500
     Send, cB.xlsx
