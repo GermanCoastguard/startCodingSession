@@ -2,8 +2,8 @@
 
 ^!c:: ; Wenn Strg + Alt + C gedrückt wird
     KeyWait, c, U ; Warte bis Taste 'c' losgelassen wird
-    Send, ^{Alt up}
-    Send, ^{Ctrl up}
+    Send, {Alt up}
+    Send, {Ctrl up}
     Send, {LWin}
     Sleep, 500
     Send, cB.xlsx
