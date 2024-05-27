@@ -67,5 +67,7 @@ REM beliebige Editor-Datei, welcher Strings in mehreren Zeilen ausgeben kann (in
 start "" /b "YOUR PATH\cB.xlsx
 timeout /t 2
 start "" /b "YOUR PATH \send_win_left.ahk"
+timeout /t 0.1
+start "" /b "YOUR PATH \springeInZeileA2.ahk"
 
 exit
