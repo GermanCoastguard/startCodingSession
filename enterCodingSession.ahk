@@ -87,7 +87,7 @@ Sleep, 500
 ;öffne Mein Profil und Springe in meine Coding Session Playlist
       Send, ^l          ;öffne suchleiste
       Sleep, 500
-      Send, scott rill seven   ; trage song ein
+      Send, jiri horak the moment of joy  ; trage song ein
       Sleep, 1500        ;pause für aktualisierung
       Send, {Enter}
       Loop, 3 {
