@@ -88,7 +88,7 @@ Sleep, 500
       Send, ^l          ;öffne suchleiste
       Sleep, 500
       Send, scott rill seven   ; trage song ein
-      Sleep, 3000        ;pause für aktualisierung
+      Sleep, 1500        ;pause für aktualisierung
       Send, {Enter}
       Loop, 3 {
             Send, {Tab} ; navigiere zu song
