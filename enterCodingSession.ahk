@@ -86,11 +86,14 @@ Sleep, 500
 
 ;öffne Mein Profil und Springe in meine Coding Session Playlist
       Send, ^l          ;öffne suchleiste
+      Sleep, 500
       Send, scott rill seven   ; trage song ein
-      Sleep, 200        ;pause für aktualisierung
-      Loop, 8 {
+      Sleep, 3000        ;pause für aktualisierung
+      Send, {Enter}
+      Loop, 3 {
             Send, {Tab} ; navigiere zu song
       }
+      Sleep, 250
       Send, {Enter}     ;öffne profil
 
 return
