@@ -1,25 +1,24 @@
 ; Lade alle Notwendigen AHK-Skripte
-      Run, "YOUR PATH \switchVscWindow.ahk"
-      Run, "YOUR PATH \wrapTextIntoInterpolation.ahk"
-      Run, "YOUR PATH \wrapTextIntoStringInterpolation.ahk"
+      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\switchVscWindow.ahk"
+      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\wrapTextIntoInterpolation.ahk"
+      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\wrapTextIntoStringInterpolation.ahk"
             ; Auch auf andere Quellen bezogen , => Allgemein und Bearbeitungsfähige Textdatei/Eingabedaitei als Requirement
-      Run, "YOUR PATH \ctrlCBackup.ahk"
-      Run, "YOUR PATH \ctrlXBackup.ahk"
+      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\ctrlCBackupVscStattExcel.ahk"
+      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\ctrlXBackupVscStattExcel.ahk"
 
             ; Powertoys Bezogene
-      Run, "YOUR PATH \openPowertoysSearchbar.ahk"
-      Run, "YOUR PATH \colorPicker.ahk"
-      Run, "YOUR PATH \lightshotLive.ahk"
+      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\colorPicker.ahk"
+      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\lightshotLive.ahk"
 
             ; Windows bezogene 
                   ; Folgende Makros entfernen vergabe von ² aka {U+00B2} sowie ³ {U+00B3}
-      Run, "YOUR PATH \tabToGithub.ahk"
-      Run, "YOUR PATH \tabToGpt.ahk"
-      Run, "YOUR PATH \tabToVsc.ahk"
-      Run, "YOUR PATH \tabToLiveserver.ahk"
+      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\tabToGithub.ahk"
+      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\tabToGpt.ahk"
+      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\tabToVscVscStattExcel.ahk"
+      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\tabToLiveserver.ahk"
 
 ; Create Chrome Tab for Github
-      Send, !{Space} ;open powertoys searchbar
+      Send, !{Enter} ;open powertoys searchbar
       Sleep, 50
       Send, chrome   ;type chrome
       Sleep, 350
@@ -34,7 +33,7 @@
             }
 
 ; Create Second Chrome Tab for GPT
-      Send, !{Space}
+      Send, !{Enter}
       Sleep, 50
       Send, {Enter}
       Sleep, 200
@@ -46,7 +45,7 @@
             }
       
 ; Create Third Chrome Tab for GPT
-      Send, !{Space}
+      Send, !{Enter}
       Sleep, 50
       Send, {Enter}
       Sleep, 200
@@ -60,20 +59,48 @@
       Send, ^+j               ;open dev tools
 
 
-; Open Excel file YOUR PATH (Für ctrlCBackup und ctrlXBackup)
-      Send, !{Space}
-      Sleep, 50
-      Send, cB. ; die Verknpüfung meines Files auswählen
-      Sleep, 250
-      Send, {Enter}
-      ;Adjust Window
-              Send, #{Left} 
-Sleep, 3000
-Run, "YOUR PATH \springeInZeileA2.ahk"
-Sleep, 500
+
+
+
+
+
+;öffne neues visual studio code fenster
+Send, !{Enter}                ;öffne powertoys searhbar
+Sleep, 50
+Send, Visual Studio Code      ;füge visual studio code string ein
+Sleep, 250
+Send, {Enter}                 ;öffne Visual studio code
+Sleep, 1000
+
+Send, #{Left}                 ;Schiebe Fenster an die gewünschte Position
+
+
+
+;um open Folder zu öffnen
+Send, {Ctrl down}ko{Ctrl up}
+Sleep, 100
+Send, C:\Users\dabor\Desktop\Projects\dailyCtrlCBackups
+Send, {Tab}
+Send, {Enter}
+Sleep, 1000
+
+Send, ^w^w^w^w^w^w
+; öffnet ctrlBackup
+Send, ^p
+Send, dailyCtrlCBackups
+Sleep, 1
+Send, {Enter}
+
+
+;dieser Schritt muss nicht sein , wird ohnehin in dem ctrlCBackup.ahk ausgeführt
+Send, ^g
+Send, 69
+Send, {Enter}
+Send, {Enter} ; um in Zeile 70 zu gelangen 
+Send, Session Start : ^+!t                      ;Erfasse Uhrzeit
 
 ;Open Spotify
-      Send, !{Space}
+      Send, !{Enter}
       Sleep, 50
       Send, spotify
       Sleep, 250
@@ -87,11 +114,11 @@ Sleep, 500
 ;öffne Mein Profil und Springe in meine Coding Session Playlist
       Send, ^l          ;öffne suchleiste
       Sleep, 500
-      Send, jiri horak the moment of joy  ; trage song ein
+      Send, 493820518   ;tippe meinen account ein
       Sleep, 1500        ;pause für aktualisierung
       Send, {Enter}
-      Loop, 3 {
-            Send, {Tab} ; navigiere zu song
+      Loop, 6 {
+            Send, {Tab} ;navigiere zum profil
       }
       Sleep, 250
       Send, {Enter}     ;öffne profil
