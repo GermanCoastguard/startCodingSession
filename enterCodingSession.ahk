@@ -1,29 +1,34 @@
+Sleep, 50
+
 ; Lade alle Notwendigen AHK-Skripte
-      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\switchVscWindow.ahk"
-      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\wrapTextIntoInterpolation.ahk"
-      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\wrapTextIntoStringInterpolation.ahk"
+	    ; VSC Bezogene
+      Run, "YOUR PATH\switchVscWindow.ahk"
+      Run, "YOUR PATH\wrapTextIntoInterpolation.ahk"
+      Run, "YOUR PATH\wrapTextIntoStringInterpolation.ahk"
             ; Auch auf andere Quellen bezogen , => Allgemein und Bearbeitungsfähige Textdatei/Eingabedaitei als Requirement
-      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\ctrlCBackupVscStattExcel.ahk"
-      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\ctrlXBackupVscStattExcel.ahk"
+      Run, "YOUR PATH\ctrlCBackupVscStattExcel.ahk"
+      Run, "YOUR PATH\ctrlXBackupVscStattExcel.ahk"
 
             ; Powertoys Bezogene
-      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\colorPicker.ahk"
-      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\lightshotLive.ahk"
+      Run, "YOUR PATH\colorPicker.ahk"
+      Run, "YOUR PATH\lightshotLive.ahk"
 
             ; Windows bezogene 
                   ; Folgende Makros entfernen vergabe von ² aka {U+00B2} sowie ³ {U+00B3}
-      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\tabToGithub.ahk"
-      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\tabToGpt.ahk"
-      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\tabToVscVscStattExcel.ahk"
-      Run, "C:\users\dabor\desktop\Hotkeys\alleHotkeys\tabToLiveserver.ahk"
+      Run, "YOUR PATH\tabToGithub.ahk"
+      Run, "YOUR PATH\tabToGpt.ahk"
+      Run, "YOUR PATH\tabToVscVscStattExcel.ahk"
+      Run, "YOUR PATH\tabToLiveserver.ahk"
+
+      Sleep, 150
 
 ; Create Chrome Tab for Github
       Send, !{Enter} ;open powertoys searchbar
-      Sleep, 50
+      Sleep, 150
       Send, chrome   ;type chrome
       Sleep, 350
       Send, {Enter}  ;open chrome
-      Sleep, 350
+      Sleep, 500
             Send, https://github.com/ ;type url
             Send, {Enter} ; submit url
             Sleep, 50
@@ -34,10 +39,11 @@
 
 ; Create Second Chrome Tab for GPT
       Send, !{Enter}
-      Sleep, 50
+      Sleep, 150
       Send, {Enter}
-      Sleep, 200
+      Sleep, 500
             Send, https://chat.openai.com/chat ;type url
+	    Sleep, 125
             Send, {Enter} ; submit url
             ;Adjust Window
             Loop, 3 {
@@ -46,10 +52,11 @@
       
 ; Create Third Chrome Tab for GPT
       Send, !{Enter}
-      Sleep, 50
+      Sleep, 150
       Send, {Enter}
-      Sleep, 200
+      Sleep, 500
             Send, https://www.google.com ;type url
+	    Sleep, 125	
             Send, {Enter} ; submit url
             ;Adjust Window
             Loop, 2 {
@@ -65,8 +72,8 @@
 
 
 ;öffne neues visual studio code fenster
-Send, !{Enter}                ;öffne powertoys searhbar
-Sleep, 50
+Send, !{Enter}                ;öffne powertoys searchbar
+Sleep, 125
 Send, Visual Studio Code      ;füge visual studio code string ein
 Sleep, 250
 Send, {Enter}                 ;öffne Visual studio code
@@ -78,8 +85,8 @@ Send, #{Left}                 ;Schiebe Fenster an die gewünschte Position
 
 ;um open Folder zu öffnen
 Send, {Ctrl down}ko{Ctrl up}
-Sleep, 100
-Send, C:\Users\dabor\Desktop\Projects\dailyCtrlCBackups
+Sleep, 250
+Send, YOUR PATH \dailyCtrlCBackups
 Send, {Tab}
 Send, {Enter}
 Sleep, 1000
@@ -88,7 +95,7 @@ Send, ^w^w^w^w^w^w
 ; öffnet ctrlBackup
 Send, ^p
 Send, dailyCtrlCBackups
-Sleep, 1
+Sleep, 50
 Send, {Enter}
 
 
