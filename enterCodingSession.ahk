@@ -1,6 +1,8 @@
 ; Lade alle Notwendigen AHK-Skripte
       Run, "YOUR PATH \switchVscWindow.ahk"
       Run, "YOUR PATH \wrapTextIntoInterpolation.ahk"
+      Run, "YOUR PATH \jumpToLineXColumnX.ahk"
+      Run, "YOUR PATH \commentLineX1ToX2.ahk"
       Run, "YOUR PATH \wrapTextIntoStringInterpolation.ahk"
             ; Auch auf andere Quellen bezogen , => Allgemein und Bearbeitungsfähige Textdatei/Eingabedaitei als Requirement
       Run, "YOUR PATH \ctrlCBackup.ahk"
