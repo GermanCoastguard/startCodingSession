@@ -1,32 +1,36 @@
+Sleep, 50
+
 ; Lade alle Notwendigen AHK-Skripte
-      Run, "YOUR PATH \switchVscWindow.ahk"
-      Run, "YOUR PATH \wrapTextIntoInterpolation.ahk"
+	    ; VSC Bezogene
+      Run, "YOUR PATH\switchVscWindow.ahk"
+      Run, "YOUR PATH\wrapTextIntoInterpolation.ahk"
       Run, "YOUR PATH \jumpToLineXColumnX.ahk"
       Run, "YOUR PATH \commentLineX1ToX2.ahk"
-      Run, "YOUR PATH \wrapTextIntoStringInterpolation.ahk"
+      Run, "YOUR PATH\wrapTextIntoStringInterpolation.ahk"
             ; Auch auf andere Quellen bezogen , => Allgemein und Bearbeitungsfähige Textdatei/Eingabedaitei als Requirement
-      Run, "YOUR PATH \ctrlCBackup.ahk"
-      Run, "YOUR PATH \ctrlXBackup.ahk"
+      Run, "YOUR PATH\ctrlCBackupVscStattExcel.ahk"
+      Run, "YOUR PATH\ctrlXBackupVscStattExcel.ahk"
 
             ; Powertoys Bezogene
-      Run, "YOUR PATH \openPowertoysSearchbar.ahk"
-      Run, "YOUR PATH \colorPicker.ahk"
-      Run, "YOUR PATH \lightshotLive.ahk"
+      Run, "YOUR PATH\colorPicker.ahk"
+      Run, "YOUR PATH\lightshotLive.ahk"
 
             ; Windows bezogene 
                   ; Folgende Makros entfernen vergabe von ² aka {U+00B2} sowie ³ {U+00B3}
-      Run, "YOUR PATH \tabToGithub.ahk"
-      Run, "YOUR PATH \tabToGpt.ahk"
-      Run, "YOUR PATH \tabToVsc.ahk"
-      Run, "YOUR PATH \tabToLiveserver.ahk"
+      Run, "YOUR PATH\tabToGithub.ahk"
+      Run, "YOUR PATH\tabToGpt.ahk"
+      Run, "YOUR PATH\tabToVscVscStattExcel.ahk"
+      Run, "YOUR PATH\tabToLiveserver.ahk"
+
+      Sleep, 150
 
 ; Create Chrome Tab for Github
-      Send, !{Space} ;open powertoys searchbar
-      Sleep, 50
+      Send, !{Enter} ;open powertoys searchbar
+      Sleep, 150
       Send, chrome   ;type chrome
       Sleep, 350
       Send, {Enter}  ;open chrome
-      Sleep, 350
+      Sleep, 500
             Send, https://github.com/ ;type url
             Send, {Enter} ; submit url
             Sleep, 50
@@ -36,11 +40,12 @@
             }
 
 ; Create Second Chrome Tab for GPT
-      Send, !{Space}
-      Sleep, 50
+      Send, !{Enter}
+      Sleep, 150
       Send, {Enter}
-      Sleep, 200
+      Sleep, 500
             Send, https://chat.openai.com/chat ;type url
+	    Sleep, 125
             Send, {Enter} ; submit url
             ;Adjust Window
             Loop, 3 {
@@ -48,11 +53,12 @@
             }
       
 ; Create Third Chrome Tab for GPT
-      Send, !{Space}
-      Sleep, 50
+      Send, !{Enter}
+      Sleep, 150
       Send, {Enter}
-      Sleep, 200
+      Sleep, 500
             Send, https://www.google.com ;type url
+	    Sleep, 125	
             Send, {Enter} ; submit url
             ;Adjust Window
             Loop, 2 {
@@ -62,20 +68,48 @@
       Send, ^+j               ;open dev tools
 
 
-; Open Excel file YOUR PATH (Für ctrlCBackup und ctrlXBackup)
-      Send, !{Space}
-      Sleep, 50
-      Send, cB. ; die Verknpüfung meines Files auswählen
-      Sleep, 250
-      Send, {Enter}
-      ;Adjust Window
-              Send, #{Left} 
-Sleep, 3000
-Run, "YOUR PATH \springeInZeileA2.ahk"
-Sleep, 500
+
+
+
+
+
+;öffne neues visual studio code fenster
+Send, !{Enter}                ;öffne powertoys searchbar
+Sleep, 125
+Send, Visual Studio Code      ;füge visual studio code string ein
+Sleep, 250
+Send, {Enter}                 ;öffne Visual studio code
+Sleep, 1000
+
+Send, #{Left}                 ;Schiebe Fenster an die gewünschte Position
+
+
+
+;um open Folder zu öffnen
+Send, {Ctrl down}ko{Ctrl up}
+Sleep, 250
+Send, YOUR PATH \dailyCtrlCBackups
+Send, {Tab}
+Send, {Enter}
+Sleep, 1000
+
+Send, ^w^w^w^w^w^w
+; öffnet ctrlBackup
+Send, ^p
+Send, dailyCtrlCBackups
+Sleep, 50
+Send, {Enter}
+
+
+;dieser Schritt muss nicht sein , wird ohnehin in dem ctrlCBackup.ahk ausgeführt
+Send, ^g
+Send, 69
+Send, {Enter}
+Send, {Enter} ; um in Zeile 70 zu gelangen 
+Send, Session Start : ^+!t                      ;Erfasse Uhrzeit
 
 ;Open Spotify
-      Send, !{Space}
+      Send, !{Enter}
       Sleep, 50
       Send, spotify
       Sleep, 250
@@ -89,11 +123,11 @@ Sleep, 500
 ;öffne Mein Profil und Springe in meine Coding Session Playlist
       Send, ^l          ;öffne suchleiste
       Sleep, 500
-      Send, jiri horak the moment of joy  ; trage song ein
+      Send, 493820518   ;tippe meinen account ein
       Sleep, 1500        ;pause für aktualisierung
       Send, {Enter}
-      Loop, 3 {
-            Send, {Tab} ; navigiere zu song
+      Loop, 6 {
+            Send, {Tab} ;navigiere zum profil
       }
       Sleep, 250
       Send, {Enter}     ;öffne profil
