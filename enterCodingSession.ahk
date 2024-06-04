@@ -124,7 +124,7 @@ Send, Session Start : ^+!t                      ;Erfasse Uhrzeit
 ;öffne Mein Profil und Springe in meine Coding Session Playlist
       Send, ^l          ;öffne suchleiste
       Sleep, 500
-      Send, 493820518   ;tippe meinen account ein
+      Send, song of storms*   ;tippe meinen account ein
       Sleep, 1500        ;pause für aktualisierung
       Send, {Enter}
       Loop, 6 {
