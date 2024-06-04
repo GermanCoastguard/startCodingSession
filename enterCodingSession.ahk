@@ -89,6 +89,7 @@ Send, #{Left}                 ;Schiebe Fenster an die gewünschte Position
 Send, {Ctrl down}ko{Ctrl up}
 Sleep, 250
 Send, YOUR PATH \dailyCtrlCBackups
+Sleep, 50
 Send, {Tab}
 Send, {Enter}
 Sleep, 1000
